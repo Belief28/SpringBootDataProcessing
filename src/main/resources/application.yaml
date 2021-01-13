@@ -1,0 +1,11 @@
+
+spring:
+  #»·¾³dev/test/pro
+  profiles:
+    active: dev
+    resources:
+      static-locations: classpath:/templates/,classpath:/static/
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
