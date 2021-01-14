@@ -1,6 +1,5 @@
 
 spring:
-  #»·¾³dev/test/pro
   profiles:
     active: dev
     resources:
