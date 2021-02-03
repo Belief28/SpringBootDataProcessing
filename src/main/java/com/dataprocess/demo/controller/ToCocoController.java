@@ -1,6 +1,7 @@
 package com.dataprocess.demo.controller;
 
 
+import com.dataprocess.demo.domain.coco.CocoData;
 import com.dataprocess.demo.domain.vggvia.VggviaData;
 import com.dataprocess.demo.utils.MultipartFileUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -83,4 +84,10 @@ public class ToCocoController {
         });
         return vggviaDataList;
     }
+    @PostMapping("/toCoco")
+    public CocoData vggviaToCoco(@RequestParam("file") List<MultipartFile> multipartFiles) {
+        
+        return null;
+    }
+
 }
